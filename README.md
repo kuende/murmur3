@@ -36,4 +36,4 @@ Murmur3.h1("hello, world")
 
 ## Contributors
 
-- [[teodor-pripoae]](https://github.com/teodor-pripoae) Teodor Pripoae - creator, maintainer
+- [@teodor-pripoae](https://github.com/teodor-pripoae) Teodor Pripoae - creator, maintainer
