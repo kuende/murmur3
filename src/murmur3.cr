@@ -27,8 +27,8 @@ module Murmur3
       # Define 2 tuples for first 8 bytes from index st1 and st2
       block1 = {data[st1 + 0], data[st1 + 1], data[st1 + 2], data[st1 + 3], data[st1 + 4], data[st1 + 5], data[st1 + 6], data[st1 + 7]}
       block2 = {data[st2 + 0], data[st2 + 1], data[st2 + 2], data[st2 + 3], data[st2 + 4], data[st2 + 5], data[st2 + 6], data[st2 + 7]}
-      k1 = (pointerof(block1) as UInt64*).value
-      k2 = (pointerof(block2) as UInt64*).value
+      k1 = (pointerof(block1).as(UInt64*)).value
+      k2 = (pointerof(block2).as(UInt64*)).value
 
   		k1 *= c1
   		k1 = (k1 << 31) | (k1 >> 33) # ROTL64(k1, 31)
